@@ -1,2 +1,2 @@
-# ecommerce-website
-Interactive Web Programming Assignment: E-Commerce Website
+# Company Profile Website
+Interactive Web Programming Assignment: Company Profile Website
