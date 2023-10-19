@@ -6,70 +6,91 @@
     <title>Company Profile | PWI</title>
     <link rel="stylesheet" href="dist/output.css" />
   </head>
-  <body class="bg-gray-200 text-gray-950 relative h-[5000px]">
-    <!-- GRADIENT BACKGROUND -->
-    <div
-      class="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem]"
-    ></div>
-    <div
-      class="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem]"
-    ></div>
-
-    <!-- HEADER -->
-    <header class="z-[999] relative">
+  <body class="font-medium">
+    <!-- NAVBAR -->
+    <nav class="top-0 z-10 w-full py-5">
       <div
-        class="fixed top-6 left-1/2 -translate-x-1/2 h-[3.25rem] w-[45.5%] rounded-full border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]"
-      ></div>
+        class="max-w-md px-6 mx-auto sm:px-0 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="#home"
+            class="text-2xl font-semibold text-gray-700 rounded outline-none"
+          >
+            RGK<span class="text-blue-600" data-target="#home">Studio</span></a
+          >
+          <ul class="hidden space-x-12 text-lg sm:flex">
+            <li>
+              <a
+                href="#services"
+                class="text-gray-600 rounded outline-none hover:text-gray-800"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#works"
+                class="text-gray-600 rounded outline-none hover:text-gray-800"
+                >Works</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-gray-600 rounded outline-none hover:text-gray-800"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <!-- NAV -->
-      <nav class="flex fixed top-[0.15rem] left-1/2 h-24 -translate-x-1/2 py-2">
-        <ul
-          class="flex w-[40rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500"
+    <!-- HERO SECTION -->
+    <section class="lg:w-screen h-fit lg:mb-20 lg:pt-24">
+      <div
+        class="container flex flex-col lg:flex-row px-5 lg:w-full lg:mx-auto"
+      >
+        <div
+          class="pt-20 lg:pt-0 mb-10 lg:basis-6/12 md:flex md:flex-row md:justify-center"
         >
-          <li class="h-3/4 flex items-center justify-center relative">
-            <a
-              href="#home"
-              class="flex w-full items-center justify-center mx-2 px-3 py-3 hover:text-gray-950 transition"
-              >Home</a
+          <img
+            src="/"
+            alt="RGK Studio"
+            width="500"
+            height="500"
+            class="h-auto w-auto"
+            style="color: transparent"
+          />
+        </div>
+        <div class="lg:basis-6/12 lg:flex lg:flex-col lg:pt-24">
+          <h1 class="font-Inter font-bold text-4xl text-black mb-5">
+            Improve <span class="font-bold text-blue-600">yourself</span> with
+            our<mark
+              class="ml-2 px-2 pt-0 text-white bg-blue-600 rounded-sm text-3xl leading-snug"
+              >best</mark
             >
-          </li>
-          <li class="h-3/4 flex items-center justify-center relative">
-            <a
-              href="#about"
-              class="flex w-full items-center justify-center mx-2 px-3 py-3 hover:text-gray-950 transition"
-              >About</a
-            >
-          </li>
-          <li class="h-3/4 flex items-center justify-center relative">
-            <a
-              href="#products"
-              class="flex w-full items-center justify-center mx-2 px-3 py-3 hover:text-gray-950 transition"
-              >Products</a
-            >
-          </li>
-          <li class="h-3/4 flex items-center justify-center relative">
-            <a
-              href="#services"
-              class="flex w-full items-center justify-center mx-2 px-3 py-3 hover:text-gray-950 transition"
-              >Services</a
-            >
-          </li>
-          <li class="h-3/4 flex items-center justify-center relative">
-            <a
-              href="#pricing"
-              class="flex w-full items-center justify-center mx-2 px-3 py-3 hover:text-gray-950 transition"
-              >Pricing</a
-            >
-          </li>
-          <li class="h-3/4 flex items-center justify-center relative">
-            <a
-              href="#contact"
-              class="flex w-full items-center justify-center mx-2 px-3 py-3 hover:text-gray-950 transition"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+            mentor
+          </h1>
+          <p
+            class="font-Inter text-lg text-black lg:text-2xl mb-5 lg:pr-[200px]"
+          >
+            Learn Coding with our <span class="text-blue-500">method</span>,
+            without stress and prioritized your
+            <span class="text-blue-500">understanding</span>
+          </p>
+          <div class="mb-10">
+            <a href="/">
+              <button
+                class="z-0 group relative inline-flex items-center justify-center px-4 py-2 text-white rounded box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden outline-none bg-blue-600 hover:bg-blue-700"
+                type="button"
+              >
+                See our class
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
