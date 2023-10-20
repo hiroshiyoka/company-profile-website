@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="!scroll-smooth overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company Profile | PWI</title>
     <link rel="stylesheet" href="dist/output.css" />
   </head>
-  <body class="font-medium">
+  <body class="font-medium overflow-x-hidden pt-2">
+    <div
+      class="relative max-w-md px-6 mx-auto sm:px-0 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl"
+    >
+      <div class="absolute transform left-[-150px] top-[-150px] -z-10">
+        <svg
+          width="300"
+          height="300"
+          class="text-blue-200 filter blur-[200px]"
+          viewBox="0 0 300 300"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <circle cx="150" cy="150" r="150" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+    <!-- MOBILE NAVBAR MENU -->
+    <nav
+      id="mobile-navbar-menu"
+      class="fixed top-0 left-0 z-20 w-full h-full py-20 overflow-y-scroll transition duration-500 transform translate-x-full bg-white/80 backdrop-filter backdrop-blur-md sm:hidden"
+    >
+      <button
+        onclick="toggleMobileMenu(false)"
+        class="absolute p-2 text-gray-500 rounded-full outline-none top-10 right-10"
+      >
+        <span class="sr-only">Close menu</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M20 20L4 4m16 0L4 20" />
+        </svg>
+      </button>
+      <div class="text-4xl font-semibold text-center text-gray-700">
+        RGK<span class="text-blue-600">Studio</span>
+      </div>
+      <ul class="mt-20 space-y-16 text-4xl font-bold text-center text-gray-600">
+        <li>
+          <a href="#courses" class="rounded outline-none">Courses</a>
+        </li>
+        <li>
+          <a href="#pricing" class="rounded outline-none">Pricing</a>
+        </li>
+        <li>
+          <a href="#contact" class="rounded outline-none">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
     <!-- NAVBAR -->
-    <nav class="top-0 z-10 w-full py-5">
+    <nav id="navbar" class="top-0 z-10 w-full py-5">
       <div
         class="max-w-md px-6 mx-auto sm:px-0 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl"
       >
@@ -19,19 +76,38 @@
           >
             RGK<span class="text-blue-600" data-target="#home">Studio</span></a
           >
+          <button
+            onclick="toggleMobileMenu(true)"
+            class="text-gray-600 rounded outline-none sm:hidden"
+          >
+            <span class="sr-only">Open menu</span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 6h14M5 12h14M5 18h14" />
+            </svg>
+          </button>
           <ul class="hidden space-x-12 text-lg sm:flex">
             <li>
               <a
-                href="#services"
+                href="#courses"
                 class="text-gray-600 rounded outline-none hover:text-gray-800"
-                >Services</a
+                >Courses</a
               >
             </li>
             <li>
               <a
-                href="#works"
+                href="#pricing"
                 class="text-gray-600 rounded outline-none hover:text-gray-800"
-                >Works</a
+                >Pricing</a
               >
             </li>
             <li>
@@ -55,16 +131,15 @@
           class="pt-20 lg:pt-0 mb-10 lg:basis-6/12 md:flex md:flex-row md:justify-center"
         >
           <img
-            src="/"
+            src="src/img/hero.jpg"
             alt="RGK Studio"
-            width="500"
-            height="500"
-            class="h-auto w-auto"
+            width="400"
+            class="h-auto w-auto rounded-md overflow-hidden lg:ml-8"
             style="color: transparent"
           />
         </div>
-        <div class="lg:basis-6/12 lg:flex lg:flex-col lg:pt-24">
-          <h1 class="font-Inter font-bold text-4xl text-black mb-5">
+        <div class="lg:ml-12 lg:basis-6/12 lg:flex lg:flex-col lg:pt-24">
+          <h1 class="font-Inter font-bold text-4xl text-gray-700 mb-5">
             Improve <span class="font-bold text-blue-600">yourself</span> with
             our<mark
               class="ml-2 px-2 pt-0 text-white bg-blue-600 rounded-sm text-3xl leading-snug"
@@ -73,7 +148,7 @@
             mentor
           </h1>
           <p
-            class="font-Inter text-lg text-black lg:text-2xl mb-5 lg:pr-[200px]"
+            class="font-Inter text-lg text-gray-600 lg:text-xl mb-5 lg:pr-[200px]"
           >
             Learn Coding with our <span class="text-blue-500">method</span>,
             without stress and prioritized your
@@ -92,5 +167,105 @@
         </div>
       </div>
     </section>
+
+    <!-- COURSES MENU -->
+    <div
+      class="bg-white max-w-lg px-6 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl"
+    >
+      <main class="pb-12 space-y-56">
+        <section id="courses" class="relative">
+          <header>
+            <h2
+              class="inline px-1 text-lg font-semibold text-blue-800 bg-blue-100"
+            >
+              Courses
+            </h2>
+            <h3 class="text-4xl font-extrabold text-gray-700 lg:text-5xl mt-7">
+              Kelas yang kami sediakan
+            </h3>
+            <h4 class="mt-4 text-xl text-gray-600 lg:text-2xl">
+              Anda memiliki akses ke berbagai pilihan kelas yang dapat dipilih
+              sesuai dengan preferensi Anda. Kami tidak menawarkan program kelas
+              full-stack, karena kami memahami bahwa untuk menguasai semua
+              bidang diperlukan lebih dari 3 bulan.
+            </h4>
+          </header>
+          <div
+            class="grid mt-20 md:grid-cols-4 lg:grid-cols-3 gap-x-8 gap-y-16"
+          >
+            <article
+              class="flex flex-col pb-8 text-center transition transform bg-white shadow group md:col-span-2 lg:col-span-1 rounded-2xl hover:-translate-y-6 hover:shadow-lg"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 mx-auto -mt-8 text-white bg-blue-600 rounded-2xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="7" height="7" rx="1" />
+                  <rect x="3" y="14" width="7" height="7" rx="1" />
+                  <rect x="14" y="3" width="7" height="7" rx="1" />
+                  <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
+              </div>
+            </article>
+            <article
+              class="flex flex-col pb-8 text-center transition transform bg-white shadow group md:col-span-2 lg:col-span-1 rounded-2xl hover:-translate-y-6 hover:shadow-lg"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 mx-auto -mt-8 text-white bg-blue-600 rounded-2xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z"
+                  />
+                  <path d="M8 20h8" />
+                </svg>
+              </div>
+            </article>
+            <article
+              class="flex flex-col pb-8 text-center transition transform bg-white shadow group md:col-span-2 lg:col-span-1 rounded-2xl hover:-translate-y-6 hover:shadow-lg"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 mx-auto -mt-8 text-white bg-blue-600 rounded-2xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="6" y="2" width="12" height="20" rx="2" />
+                  <path d="M11.95 18h.1" />
+                </svg>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
