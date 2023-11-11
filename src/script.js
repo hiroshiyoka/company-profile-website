@@ -9,8 +9,8 @@ const topPadding = 16 * 0.5;
 function addNavbarBackgroundOnScroll() {
   const fixedNavbarClasses = [
     "fixed",
-    "bg-white",
-    "bg-opacity-80",
+    "bg-gray-800",
+    "bg-opacity-10",
     "backdrop-filter",
     "backdrop-blur-xl",
     "border-b",
