@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRK | Contact</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <div
+      id="kontak"
+      class="max-w-lg px-6 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:mb-24 xl:max-w-6xl"
+    >
+      <main class="pb-12 space-y-56">
+        <section class="relative text-center">
+          <header>
+            <h2 class="inline px-1 text-3xl font-bold text-blue-500">
+              Bantuan & Dukungan
+            </h2>
+            <div class="max-w-2xl mx-auto">
+              <h3
+                class="text-xl font-extrabold text-gray-100 bg-blue-500 rounded-md px-4 py-2 lg:text-5xl mt-6 w-full"
+              >
+                Membutuhkan bantuan atau dukungan?
+              </h3>
+            </div>
+            <h4 class="mt-6 text-xl text-gray-300 lg:text-2xl">
+              Jika anda memerlukan bantuan atau dukungan terkait cara mendaftar
+              atau kelas yang kami sediakan, segera hubungi kami
+            </h4>
+          </header>
+          <div class="mt-20 text-gray-700">
+            <form
+              action="https://getform.io/f/626fc538-c832-42af-9458-9aa11f8d6181"
+              method="post"
+              enctype="multipart/form-data"
+              class="grid w-full grid-cols-1 mx-auto lg:w-2/3 xl:w-1/2 gap-y-6"
+            >
+              <div class="grid sm:grid-cols-2 gap-x-4 gap-y-6">
+                <div class="flex flex-col space-y-1.5">
+                  <label for="namaDepan" class="text-lg font-bold text-gray-50"
+                    >Nama depan</label
+                  >
+                  <input
+                    id="namaDepan"
+                    name="namaDepan"
+                    type="text"
+                    placeholder="Jasan"
+                    required
+                    class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  />
+                </div>
+                <div class="flex flex-col space-y-1.5">
+                  <label
+                    for="namaBelakang"
+                    class="text-lg font-bold text-gray-50"
+                    >Nama belakang</label
+                  >
+                  <input
+                    id="namaBelakang"
+                    name="namaBelakang"
+                    type="text"
+                    placeholder="Pal Noto"
+                    required
+                    class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col space-y-1.5">
+                <label for="email" class="text-lg font-bold text-gray-50"
+                  >Email</label
+                >
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="jasanpalnoto@gmail.com"
+                  required
+                  class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                />
+              </div>
+              <div class="flex flex-col space-y-1.5">
+                <div class="flex justify-between">
+                  <label for="lampiran" class="text-lg font-bold text-gray-50"
+                    >Lampiran</label
+                  >
+                  <span class="text-lg text-gray-500 italic">Optional</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <button
+                    type="button"
+                    onclick="document.getElementById('lampiran')"
+                    class="inline-flex px-6 py-3 text-lg font-bold tracking-wide text-gray-100 transition border border-gray-300 rounded-md shadow outline-none whitespace-nowrap disabled:cursor-not-allowed disabled:opacity-60 active:scale-90 focus:ring-2 ring-offset-2 ring-blue-300 hover:bg-gray-50 hover:text-gray-700"
+                  >
+                    Pilih file</button
+                  ><span class="text-lg text-gray-400 truncate"
+                    >Tidak ada file yang dipilih</span
+                  >
+                  <input
+                    id="lampiran"
+                    name="lampiran"
+                    type="file"
+                    accept="application/pdf"
+                    tabindex="-1"
+                    class="sr-only"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col space-y-1.5">
+                <label for="pesan" class="text-lg font-bold text-gray-50"
+                  >Pesan</label
+                >
+                <textarea
+                  name="pesan"
+                  id="pesan"
+                  rows="6"
+                  placeholder="Saya ingin mendaftar namun terdapat kendala..."
+                  required
+                  class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                ></textarea>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="font-bold text-gray-100 ring-1 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 shadow outline-none focus:ring-2 focus:ring-blue-300 hover:bg-gray-50 hover:text-gray-700"
+                >
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
