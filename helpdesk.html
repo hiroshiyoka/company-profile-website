@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRK | Helpdesk</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <!-- BACKGROUND HEADER -->
+    <div
+      class="relative max-w-md px-6 mx-auto sm:px-0 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl"
+    ></div>
+
+    <!-- MOBILE NAVBAR MENU -->
+    <nav
+      id="mobile-navbar-menu"
+      class="fixed top-0 left-0 z-20 w-full h-full py-20 overflow-y-scroll transition duration-500 transform translate-x-full bg-white/80 backdrop-filter backdrop-blur-md sm:hidden"
+    >
+      <button
+        onclick="toggleMobileMenu(false)"
+        class="absolute p-2 text-gray-500 rounded-full outline-none top-10 right-10"
+      >
+        <span class="sr-only">Close menu</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M20 20L4 4m16 0L4 20" />
+        </svg>
+      </button>
+      <div class="text-4xl font-black text-center text-gray-700">
+        GRK <span class="text-blue-600">Studio</span>
+      </div>
+      <ul class="mt-20 space-y-16 text-4xl font-bold text-center text-gray-600">
+        <li>
+          <a href="/" class="rounded outline-none">Tentang</a>
+        </li>
+        <li>
+          <a href="#kelas" class="rounded outline-none">Kelas</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="top-0 z-10 w-full py-5">
+      <div
+        class="max-w-lg px-6 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="#home"
+            class="text-2xl font-black text-gray-100 rounded outline-none"
+          >
+            GRK <span class="text-blue-600" data-target="#home">Studio</span></a
+          >
+          <button
+            onclick="toggleMobileMenu(true)"
+            class="text-gray-600 rounded outline-none sm:hidden"
+          >
+            <span class="sr-only">Open menu</span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 6h14M5 12h14M5 18h14" />
+            </svg>
+          </button>
+          <ul class="hidden space-x-12 text-lg sm:flex">
+            <li>
+              <a
+                href="/"
+                class="text-gray-100 rounded outline-none hover:text-gray-400"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a
+                href="/"
+                class="text-gray-100 rounded outline-none hover:text-gray-400"
+                >Kelas</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HELPDESK MENU -->
+    <div
+      class="max-w-lg px-6 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:mb-24 xl:max-w-6xl mt-10"
+    >
+      <main class="pb-12 space-y-56">
+        <section class="relative text-center">
+          <header>
+            <h2 class="inline px-1 text-3xl font-bold text-blue-500">
+              Bantuan & Dukungan
+            </h2>
+            <div class="max-w-3xl mx-auto">
+              <h3
+                class="text-xl font-extrabold text-gray-100 bg-blue-500 rounded-md px-4 py-2 lg:text-4xl mt-6 w-full"
+              >
+                Membutuhkan bantuan atau dukungan?
+              </h3>
+            </div>
+            <h4 class="mt-6 text-xl text-gray-300 lg:text-2xl">
+              Jika anda memerlukan bantuan atau dukungan terkait cara mendaftar
+              atau kelas yang kami sediakan, segera hubungi kami
+            </h4>
+          </header>
+          <div class="mt-20 text-gray-700">
+            <form
+              action="https://getform.io/f/626fc538-c832-42af-9458-9aa11f8d6181"
+              method="post"
+              enctype="multipart/form-data"
+              class="grid w-full grid-cols-1 mx-auto lg:w-2/3 xl:w-1/2 gap-y-6"
+            >
+              <div class="grid sm:grid-cols-2 gap-x-4 gap-y-6">
+                <div class="flex flex-col space-y-1.5">
+                  <label for="namaDepan" class="text-lg font-bold text-gray-50"
+                    >Nama depan</label
+                  >
+                  <input
+                    id="namaDepan"
+                    name="namaDepan"
+                    type="text"
+                    placeholder="Jasan"
+                    required
+                    class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  />
+                </div>
+                <div class="flex flex-col space-y-1.5">
+                  <label
+                    for="namaBelakang"
+                    class="text-lg font-bold text-gray-50"
+                    >Nama belakang</label
+                  >
+                  <input
+                    id="namaBelakang"
+                    name="namaBelakang"
+                    type="text"
+                    placeholder="Pal Noto"
+                    required
+                    class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col space-y-1.5">
+                <label for="email" class="text-lg font-bold text-gray-50"
+                  >Email</label
+                >
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="jasanpalnoto@gmail.com"
+                  required
+                  class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                />
+              </div>
+              <div class="flex flex-col space-y-1.5">
+                <div class="flex justify-between">
+                  <label for="lampiran" class="text-lg font-bold text-gray-50"
+                    >Lampiran</label
+                  >
+                  <span class="text-lg text-gray-500 italic">Optional</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <button
+                    type="button"
+                    onclick="document.getElementById('lampiran')"
+                    class="inline-flex px-6 py-3 text-lg font-bold tracking-wide text-gray-100 transition border border-gray-300 rounded-md shadow outline-none whitespace-nowrap disabled:cursor-not-allowed disabled:opacity-60 active:scale-90 focus:ring-2 ring-offset-2 ring-blue-300 hover:bg-gray-50 hover:text-gray-700"
+                  >
+                    Pilih file</button
+                  ><span class="text-lg text-gray-400 truncate"
+                    >Tidak ada file yang dipilih</span
+                  >
+                  <input
+                    id="lampiran"
+                    name="lampiran"
+                    type="file"
+                    accept="application/pdf"
+                    tabindex="-1"
+                    class="sr-only"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col space-y-1.5">
+                <label for="pesan" class="text-lg font-bold text-gray-50"
+                  >Pesan</label
+                >
+                <textarea
+                  name="pesan"
+                  id="pesan"
+                  rows="6"
+                  placeholder="Saya ingin mendaftar namun terdapat kendala..."
+                  required
+                  class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                ></textarea>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="font-bold text-gray-100 ring-1 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 shadow outline-none focus:ring-2 focus:ring-blue-300 hover:bg-gray-50 hover:text-gray-700"
+                >
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      id="harga"
+      class="max-w-lg px-6 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl"
+    >
+      <main class="pb-12 space-y-56">
+        <div
+          class="flex flex-col md:flex-row gap-5 md:gap-10 w-full mb-5 md:mb-0"
+        >
+          <div
+            class="basis-12/12 md:basis-6/12 lg:basis-4/12 flex flex-col gap-4 md:mb-5"
+          >
+            <a href="/"
+              ><div class="text-xl font-black text-gray-100">
+                GRK <span class="text-blue-600">Studio</span>
+              </div></a
+            >
+            <div class="mb-5">
+              <p class="text-lg md:text-lg mb-2 text-gray-300">Follow us:</p>
+              <ul class="flex flex-row gap-4 items-center">
+                <li>
+                  <a
+                    href="https://facebook.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="rounded outline-none hover:text-gray-600"
+                  >
+                    <span class="sr-only">Check out our facebook page</span>
+                    <img
+                      src="src/icon/facebook.png"
+                      alt="Facebook"
+                      class="w-8 h-8"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://instagram.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="rounded outline-none hover:text-gray-600"
+                  >
+                    <span class="sr-only">Check out our instagram page</span>
+                    <img
+                      src="src/icon/instagram.png"
+                      alt="Instagram"
+                      class="w-6 h-6"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="rounded outline-none hover:text-gray-600"
+                  >
+                    <span class="sr-only">Check out our twitter page</span>
+                    <img
+                      src="src/icon/twitter.png"
+                      alt="Twitter"
+                      class="w-7 h-7"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://whatsapp.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="rounded outline-none hover:text-gray-600"
+                  >
+                    <span class="sr-only">Call us on whatsapp</span>
+                    <img
+                      src="src/icon/whatsapp.png"
+                      alt="Whatsapp"
+                      class="w-6 h-6"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-bold text-lg mb-2 text-gray-300">
+                Sebuah Wadah/Tempat Belajar
+              </h5>
+              <p class="text-sm text-gray-400">
+                <span class="text-blue-500 font-semibold">GRK Studio</span>
+                menjadi pilihan terbaik untuk pelatihan di bidang teknologi dan
+                informasi dengan biaya yang sangat terjangkau di Indonesia.
+                Selain itu, kami menawarkan berbagai keuntungan menarik bagi
+                setiap siswa yang bergabung bersama kami.
+              </p>
+            </div>
+          </div>
+          <div
+            class="basis-12/12 md:basis-6/12 lg:basis-3/12 flex flex-col gap-2 mb-0 md:mb-10 lg:mb-16 lg:pl-20"
+          >
+            <h5 class="font-bold text-xl text-gray-300">
+              Temukan Ide dan Buka Potensi
+            </h5>
+            <ul class="flex flex-col gap-2 w-auto mb-2 text-gray-400 text-base">
+              <li>
+                <a
+                  href="/"
+                  class="cursor-pointer hover:text-gray-500 duration-700"
+                  >Tentang Kami</a
+                >
+              </li>
+            </ul>
+            <h5 class="font-bold text-lg text-gray-300">GRK Space</h5>
+            <p class="font-medium text-sm text-gray-400">
+              Telkom University, Jl. Telekomunikasi 1, Terusan Buah Batu,
+              Sukapura, Dayeuhkolot, Kabupaten Bandung, Jawa Barat, Indonesia
+            </p>
+          </div>
+          <div
+            class="basis-12/12 md:basis-6/12 lg:basis-3/12 flex flex-col gap-2 mb-0 md:mb-10 lg:mb-16 lg:pl-20"
+          >
+            <h5 class="font-bold text-lg text-gray-300">Halaman Lainnya</h5>
+            <ul class="flex flex-col gap-2 text-base w-auto mb-2 text-gray-400">
+              <li>
+                <a
+                  href="/contact.html"
+                  class="cursor-pointer hover:text-gray-500 duration-700"
+                  >Hubungi Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="cursor-pointer hover:text-gray-500 duration-700"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+            <h5 class="font-bold text-lg text-gray-300">Kontak Admin</h5>
+            <a
+              target="_blank"
+              href="mailto:grkstudio.dev@gmail.com"
+              class="cursor-pointer flex flex-row gap-2 items-center text-sm hover:text-gray-500 duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+              grkstudio.dev@gmail.com
+            </a>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=6281348244422"
+              class="cursor-pointer flex flex-row gap-2 items-center text-sm hover:text-gray-500 duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+              </svg>
+              Contact Service: +62-813-4824-4422
+            </a>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=6282162712220"
+              class="cursor-pointer flex flex-row gap-2 items-center text-sm hover:text-gray-500 duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+              </svg>
+              Marketing - Gita: +62-821-6271-2220
+            </a>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=6282360941732"
+              class="cursor-pointer flex flex-row gap-2 items-center text-sm hover:text-gray-500 duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+              </svg>
+              Marketing - Kezia: +62-823-6094-1732
+            </a>
+          </div>
+        </div>
+      </main>
+      <div class="divider divider-neutral"></div>
+      <main class="pb-12 space-y-56 flex flex-col items-center justify-center">
+        <footer class="flex items-center justify-between text-gray-300">
+          <p>© GRK Studio 2023. All rights reserved</p>
+        </footer>
+      </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="src/script.js"></script>
+  </body>
+</html>
