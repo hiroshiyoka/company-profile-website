@@ -1553,22 +1553,6 @@ body{
   margin-top: auto;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
-.mb-28{
-  margin-bottom: 7rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
-}
-
-.mb-24{
-  margin-bottom: 6rem;
-}
-
 .box-border{
   box-sizing: border-box;
 }
@@ -1656,6 +1640,11 @@ body{
 
 .w-full{
   width: 100%;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-3xl{
@@ -2388,6 +2377,10 @@ body{
     margin-bottom: 6rem;
   }
 
+  .lg\:mb-32{
+    margin-bottom: 8rem;
+  }
+
   .lg\:ml-12{
     margin-left: 3rem;
   }
@@ -2396,12 +2389,12 @@ body{
     margin-left: 2rem;
   }
 
-  .lg\:mb-36{
-    margin-bottom: 9rem;
+  .lg\:mb-5{
+    margin-bottom: 1.25rem;
   }
 
-  .lg\:mb-32{
-    margin-bottom: 8rem;
+  .lg\:mb-0{
+    margin-bottom: 0px;
   }
 
   .lg\:flex{
