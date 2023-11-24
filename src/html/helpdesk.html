@@ -184,11 +184,11 @@
                 <div class="flex items-center space-x-4">
                   <button
                     type="button"
-                    onclick="document.getElementById('lampiran')"
+                    onclick="document.getElementById('lampiran').click()"
                     class="inline-flex px-6 py-3 text-lg font-bold tracking-wide text-gray-100 transition border border-gray-300 rounded-md shadow outline-none whitespace-nowrap disabled:cursor-not-allowed disabled:opacity-60 active:scale-90 focus:ring-2 ring-offset-2 ring-blue-300 hover:bg-gray-50 hover:text-gray-700"
                   >
                     Pilih file</button
-                  ><span class="text-lg text-gray-400 truncate"
+                  ><span id="namaFile" class="text-lg text-gray-400 truncate"
                     >Tidak ada file yang dipilih</span
                   >
                   <input
