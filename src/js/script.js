@@ -28,9 +28,12 @@ function addNavbarBackgroundOnScroll() {
   }
 }
 
-attachment.onchange = function (event) {
+const lampiran = document.getElementById("lampiran");
+const namaFile = document.getElementById("namaFile");
+
+lampiran.onchange = function (event) {
   if (event.target.files[0]) {
-    fileNameEl.innerText = event.target.files[0].name;
+    namaFile.innerText = event.target.files[0].name;
   }
 };
 
