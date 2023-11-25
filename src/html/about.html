@@ -6,11 +6,25 @@
     <title>GRK | About</title>
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
-  <body>
+  <body class="font-medium overflow-x-hidden pt-2">
     <!-- BACKGROUND HEADER -->
     <div
       class="relative max-w-md px-6 mx-auto sm:px-0 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl"
-    ></div>
+    >
+      <div class="absolute transform left-[-150px] top-[-150px] -z-10">
+        <svg
+          width="300"
+          height="300"
+          class="text-blue-200 filter blur-[200px]"
+          viewBox="0 0 300 300"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <circle cx="150" cy="150" r="150" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
 
     <!-- MOBILE NAVBAR MENU -->
     <nav
@@ -102,11 +116,11 @@
       </div>
     </nav>
 
-    <!-- MENU ABOUT -->
     <div
-      class="max-w-lg px-6 mb-20 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:mb-32 xl:max-w-6xl"
+      class="max-w-lg px-6 mb-10 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:mb-5 xl:max-w-6xl"
     >
       <main class="pb-12 space-y-56">
+        <!-- MENU ABOUT -->
         <section class="relative">
           <div class="max-w-md mx-auto">
             <h2
@@ -359,15 +373,8 @@
             </div>
           </div>
         </section>
-      </main>
-    </div>
 
-    <!-- FOOTER -->
-    <div
-      id="harga"
-      class="max-w-lg px-6 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl"
-    >
-      <main class="pb-12 space-y-56">
+        <!-- MORE INFORMATION -->
         <div
           class="flex flex-col md:flex-row gap-5 md:gap-10 w-full mb-5 md:mb-0"
         >
@@ -586,8 +593,12 @@
           </div>
         </div>
       </main>
+
+      <!-- DIVIDER -->
       <div class="divider divider-neutral"></div>
-      <main class="pb-12 space-y-56 flex flex-col items-center justify-center">
+
+      <!-- FOOTER -->
+      <main class="flex flex-col items-center justify-center">
         <footer class="flex items-center justify-between text-gray-300">
           <p>© GRK Studio 2023. All rights reserved</p>
         </footer>
