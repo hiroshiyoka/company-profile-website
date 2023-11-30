@@ -2209,6 +2209,10 @@ details.collapse summary::-webkit-details-marker{
   line-height: 2.5rem;
 }
 
+.text-\[19px\]{
+  font-size: 19px;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
