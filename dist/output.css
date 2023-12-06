@@ -2533,6 +2533,14 @@ details.collapse summary::-webkit-details-marker{
     max-width: 28rem;
   }
 
+  .md\:max-w-lg{
+    max-width: 32rem;
+  }
+
+  .md\:max-w-xl{
+    max-width: 36rem;
+  }
+
   .md\:basis-6\/12{
     flex-basis: 50%;
   }
