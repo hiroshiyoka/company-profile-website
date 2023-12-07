@@ -1779,6 +1779,14 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 2.25rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -2531,10 +2539,6 @@ details.collapse summary::-webkit-details-marker{
 
   .md\:max-w-md{
     max-width: 28rem;
-  }
-
-  .md\:max-w-lg{
-    max-width: 32rem;
   }
 
   .md\:max-w-xl{
