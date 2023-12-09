@@ -14,7 +14,7 @@ function addNavbarBackgroundOnScroll() {
     "backdrop-filter",
     "backdrop-blur-xl",
     "border-b",
-    "border-gray-500",
+    "border-gray-700",
   ];
   if (
     document.body.scrollTop > topPadding ||
