@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GRK | About</title>
+    <title>GRK | Helpdesk</title>
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
-  <body class="font-medium overflow-x-hidden pt-2">
+  <body>
     <!-- BACKGROUND HEADER -->
     <div
       class="relative max-w-md px-6 mx-auto sm:px-0 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl"
@@ -72,7 +72,7 @@
       >
         <div class="flex items-center justify-between">
           <a
-            href="/src/html/index.html"
+            href="/src/views/index.html"
             class="text-2xl font-black text-gray-100 rounded outline-none"
           >
             GRK <span class="text-blue-600" data-target="#home">Studio</span></a
@@ -99,7 +99,7 @@
           <ul class="hidden space-x-12 text-lg sm:flex">
             <li>
               <a
-                href="/src/html/about.html"
+                href="/src/views/about.html"
                 class="text-gray-100 rounded outline-none hover:text-gray-400"
                 >Tentang</a
               >
@@ -117,260 +117,126 @@
     </nav>
 
     <div
-      class="max-w-lg px-6 mb-10 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:mb-5 xl:max-w-6xl"
+      class="max-w-lg px-6 mb-10 mx-auto sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:mb-5 xl:max-w-6xl mt-10"
     >
       <main class="pb-12 space-y-24">
-        <!-- MENU ABOUT -->
-        <section class="relative">
-          <div class="max-w-md mx-auto">
-            <h2
-              class="text-3xl font-extrabold text-gray-100 bg-blue-500 rounded-md px-4 py-2 lg:text-4xl mt-6 w-full text-center"
-            >
-              Meet our team
+        <!-- MENU HELPDESK -->
+        <section class="relative text-center">
+          <header>
+            <h2 class="inline px-1 text-3xl font-bold text-blue-500">
+              Bantuan & Dukungan
             </h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 px-5 mt-9">
-            <div class="card w-full bg-gray-800 shadow-md">
-              <figure>
-                <img
-                  src="/assets/img/kezia.jpg"
-                  alt="Kezia"
-                  loading="lazy"
-                  class="w-full self-center bg-white object-fill rounded-t-lg overflow-hidden"
-                />
-              </figure>
-              <div class="card-body">
-                <p
-                  class="card-title font-black text-base text-gray-300 lg:text-xl"
-                >
-                  Kezia Deby Celosse
-                </p>
-                <p class="font-medium text-sm text-gray-400">
-                  Chief Executive Officer
-                </p>
-                <div class="card-actions justify-end">
-                  <ul class="flex flex-row gap-4 lg:gap-5">
-                    <li>
-                      <a target="_blank" href="/" class="text-xl">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-linkedin"
-                        >
-                          <path
-                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                          />
-                          <rect width="4" height="12" x="2" y="9" />
-                          <circle cx="4" cy="4" r="2" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        target="_blank"
-                        href="https://instagram.com/keziadebycelosse"
-                        class="text-xl"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-instagram"
-                        >
-                          <rect
-                            width="20"
-                            height="20"
-                            x="2"
-                            y="2"
-                            rx="5"
-                            ry="5"
-                          />
-                          <path
-                            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                          />
-                          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+            <div class="max-w-3xl mx-auto">
+              <h3
+                class="text-xl font-extrabold text-gray-100 bg-blue-500 rounded-md px-4 py-2 lg:text-4xl mt-6 w-full"
+              >
+                Membutuhkan bantuan atau dukungan?
+              </h3>
+            </div>
+            <h4 class="mt-6 text-xl text-gray-300 lg:text-2xl">
+              Jika anda memerlukan bantuan atau dukungan terkait cara mendaftar
+              atau kelas yang kami sediakan, segera hubungi kami
+            </h4>
+          </header>
+          <div class="mt-20 text-gray-700">
+            <form
+              action="https://getform.io/f/626fc538-c832-42af-9458-9aa11f8d6181"
+              method="post"
+              enctype="multipart/form-data"
+              class="grid w-full grid-cols-1 mx-auto lg:w-2/3 xl:w-1/2 gap-y-6"
+            >
+              <div class="grid sm:grid-cols-2 gap-x-4 gap-y-6">
+                <div class="flex flex-col space-y-1.5">
+                  <label for="namaDepan" class="text-lg font-bold text-gray-50"
+                    >Nama depan</label
+                  >
+                  <input
+                    id="namaDepan"
+                    name="namaDepan"
+                    type="text"
+                    placeholder="Jasan"
+                    required
+                    class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  />
+                </div>
+                <div class="flex flex-col space-y-1.5">
+                  <label
+                    for="namaBelakang"
+                    class="text-lg font-bold text-gray-50"
+                    >Nama belakang</label
+                  >
+                  <input
+                    id="namaBelakang"
+                    name="namaBelakang"
+                    type="text"
+                    placeholder="Pal Noto"
+                    required
+                    class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="card w-full bg-gray-800 shadow-md">
-              <figure>
-                <img
-                  src="/assets/img/gita.jpg"
-                  alt="Gita"
-                  loading="lazy"
-                  class="w-full self-center bg-white object-fill rounded-t-lg overflow-hidden"
-                />
-              </figure>
-              <div class="card-body">
-                <p
-                  class="card-title font-black text-base text-gray-300 lg:text-xl"
+              <div class="flex flex-col space-y-1.5">
+                <label for="email" class="text-lg font-bold text-gray-50"
+                  >Email</label
                 >
-                  Gita Pretty Gebiola
-                </p>
-                <p class="font-medium text-sm text-gray-400">
-                  Chief Operating Officer
-                </p>
-                <div class="card-actions justify-end">
-                  <ul class="flex flex-row gap-4 lg:gap-5">
-                    <li>
-                      <a target="_blank" href="/" class="text-xl">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-linkedin"
-                        >
-                          <path
-                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                          />
-                          <rect width="4" height="12" x="2" y="9" />
-                          <circle cx="4" cy="4" r="2" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        target="_blank"
-                        href="https://instagram.com/ggitanababan"
-                        class="text-xl"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-instagram"
-                        >
-                          <rect
-                            width="20"
-                            height="20"
-                            x="2"
-                            y="2"
-                            rx="5"
-                            ry="5"
-                          />
-                          <path
-                            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                          />
-                          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="jasanpalnoto@gmail.com"
+                  required
+                  class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                />
+              </div>
+              <div class="flex flex-col space-y-1.5">
+                <div class="flex justify-between">
+                  <label for="lampiran" class="text-lg font-bold text-gray-50"
+                    >Lampiran</label
+                  >
+                  <span class="text-lg text-gray-500 italic">Optional</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <button
+                    type="button"
+                    onclick="document.getElementById('lampiran').click()"
+                    class="inline-flex px-6 py-3 text-lg font-bold tracking-wide text-gray-100 transition border border-gray-300 rounded-md shadow outline-none whitespace-nowrap disabled:cursor-not-allowed disabled:opacity-60 active:scale-90 focus:ring-2 ring-offset-2 ring-blue-300 hover:bg-gray-50 hover:text-gray-700"
+                  >
+                    Pilih file</button
+                  ><span id="namaFile" class="text-lg text-gray-400 truncate"
+                    >Tidak ada file yang dipilih</span
+                  >
+                  <input
+                    id="lampiran"
+                    name="lampiran"
+                    type="file"
+                    accept="application/pdf"
+                    tabindex="-1"
+                    class="sr-only"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="card w-full bg-gray-800 shadow-md">
-              <figure>
-                <img
-                  src="/assets/img/raka.jpg"
-                  alt="Raka"
-                  loading="lazy"
-                  class="w-full self-center bg-white object-fill rounded-t-lg overflow-hidden"
-                />
-              </figure>
-              <div class="card-body">
-                <p
-                  class="card-title font-black text-base text-gray-300 lg:text-xl"
+              <div class="flex flex-col space-y-1.5">
+                <label for="pesan" class="text-lg font-bold text-gray-50"
+                  >Pesan</label
                 >
-                  Raka Fadilah Syafaat
-                </p>
-                <p class="font-medium text-sm text-gray-400">
-                  Chief Technology Officer
-                </p>
-                <div class="card-actions justify-end">
-                  <ul class="flex flex-row gap-4 lg:gap-5">
-                    <li>
-                      <a
-                        target="_blank"
-                        href="https://linkedin.com/in/raka-fadilah"
-                        class="text-xl"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-linkedin"
-                        >
-                          <path
-                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                          />
-                          <rect width="4" height="12" x="2" y="9" />
-                          <circle cx="4" cy="4" r="2" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        target="_blank"
-                        href="https://instagram.com/mosaicman_"
-                        class="text-xl"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-instagram"
-                        >
-                          <rect
-                            width="20"
-                            height="20"
-                            x="2"
-                            y="2"
-                            rx="5"
-                            ry="5"
-                          />
-                          <path
-                            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                          />
-                          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <textarea
+                  name="pesan"
+                  id="pesan"
+                  rows="6"
+                  placeholder="Saya ingin mendaftar namun terdapat kendala..."
+                  required
+                  class="ring-1 text-gray-200 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
+                ></textarea>
               </div>
-            </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="font-bold text-gray-100 ring-1 ring-gray-300 w-full rounded-md px-4 py-3 mt-2 shadow outline-none focus:ring-2 focus:ring-blue-300 hover:bg-gray-50 hover:text-gray-700"
+                >
+                  Kirim
+                </button>
+              </div>
+            </form>
           </div>
         </section>
 
@@ -381,7 +247,7 @@
           <div
             class="basis-12/12 md:basis-6/12 lg:basis-4/12 flex flex-col gap-4 md:mb-5"
           >
-            <a href="/src/html/index.html"
+            <a href="/src/views/index.html"
               ><div class="text-xl font-black text-gray-100">
                 GRK <span class="text-blue-600">Studio</span>
               </div></a
@@ -473,7 +339,7 @@
             <ul class="flex flex-col gap-2 w-auto mb-2 text-gray-400 text-base">
               <li>
                 <a
-                  href="/src/html/about.html"
+                  href="/src/views/about.html"
                   class="cursor-pointer hover:text-gray-500 duration-700"
                   >Tentang Kami</a
                 >
@@ -492,7 +358,7 @@
             <ul class="flex flex-col gap-2 text-base w-auto mb-2 text-gray-400">
               <li>
                 <a
-                  href="/src/html/helpdesk.html"
+                  href="/src/views/helpdesk.html"
                   class="cursor-pointer hover:text-gray-500 duration-700"
                   >Hubungi Kami</a
                 >
